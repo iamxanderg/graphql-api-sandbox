@@ -1,0 +1,41 @@
+# List authors
+{
+  authors {
+    name
+    id
+  }
+}
+
+# List books
+{
+  books {
+    title
+    id
+  }
+}
+
+# Add a book
+{
+  addBook(title: "Equal Rites", genre: "Fantasy", authorId: "623f1620fd9159ecab26016e") {
+    title
+    id
+  }
+}
+
+# Get book by id query
+{
+  book(id: "623f252dfd9159ecab260174") {
+    id
+    title
+    genre
+    author {
+      id
+      name
+      age
+      books {
+        title
+        id
+      }
+    }
+  }
+}
