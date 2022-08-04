@@ -1,0 +1,33 @@
+{
+  "name": "graphql-api-sandbox",
+  "version": "1.0.0",
+  "description": "Tangerine Digital GraphQL API server sandbox",
+  "keywords": [],
+  "author": "iamxanderg",
+  "scripts": {
+    "devstart": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.5.0",
+    "mongoose": "^6.4.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
